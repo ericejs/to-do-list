@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f5f7">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="app">
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar tema escuro"
+      title="Ativar tema escuro" aria-pressed="false">
+      <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+    </button>
+
+    <section class="todo-card" aria-labelledby="page-title">
+      <div class="brand-mark" aria-hidden="true">✓</div>
+      <p class="eyebrow">Um passo de cada vez</p>
+      <h1 id="page-title">Lista de Tarefas</h1>
+      <p class="intro">Organize suas ideias e deixe o dia mais leve.</p>
+
+      <form class="task-form" id="task-form">
+        <label class="visually-hidden" for="task-input">Digite uma tarefa</label>
+        <input id="task-input" name="task" type="text" placeholder="O que você precisa fazer?" autocomplete="off"
+          maxlength="30">
+        <button id="task-button" class="add-button" type="submit" aria-label="Adicionar tarefa">
+          <span aria-hidden="true">+</span>
+          <span>Adicionar</span>
+        </button>
+      </form>
+
+      <div class="list-heading">
+        <h2>Suas tarefas</h2>
+      </div>
+
+      <ul class="task-list" id="task-list" aria-label="Lista de tarefas">
+        <li></li>
+      </ul>
+    </section>
+
+    <p class="footer-note">Feito para deixar seus planos em movimento.</p>
+  </main>
+</body>
+
+</html>
